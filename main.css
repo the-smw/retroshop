@@ -1,0 +1,1103 @@
+/*-------------*\
+*
+*  BASE STYLES
+*
+\*-------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'ParkLaneNf-pRdR';
+    src: url("assets/ParkLaneNf-pRdR.ttf");
+}
+
+
+
+@font-face {
+    font-family: 'FontleroyBrown';
+    src: url("assets/FontleroyBrown.ttf");
+}
+
+
+
+body {
+    width: 100vw;
+    height: auto;
+    background-color: #d9cdbf;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5vh;
+    color: #6d3a24;
+}
+
+
+
+/* Single direction margin declaration */
+
+nav, header,
+.actual, .headline,
+img {
+    margin-bottom: 3vh;
+}
+
+
+
+
+
+/*-------------*\
+*
+*    LAYOUT
+*
+\*------------*/
+
+.bars {
+    width: 100%;
+    height: auto;
+    background-color: #6d3a24;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+    .bars {
+        width: 80%;
+    }
+}
+
+
+
+
+
+/* ==== 1. HEADER STYLES ==== */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('assets/back.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+@media (min-width: 768px) {
+    header {
+        margin-bottom: 7vh;
+    }
+}
+
+
+
+
+
+/* ==== 2. MAIN STYLES ==== */
+
+
+@media (min-width: 768px) {
+    main {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+
+/* Birthday box styles */
+
+.actual {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    background-color:rgba(255, 255, 255, 0.25);
+    box-shadow: 10px 10px rgba(109, 58, 36, 0.3);
+    margin-bottom: 10vh;
+}
+
+
+
+
+.birthday, .headline, .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+    .actual {
+        box-shadow: none;
+        background-color: #d9cdbf;
+    }
+
+    .birthday {
+        width: 50%;
+        height: auto;
+        background-color:rgba(255, 255, 255, 0.25);
+        box-shadow: 10px 10px rgba(109, 58, 36, 0.3);
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .headline {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .title {
+        padding-right: 5rem;
+    }
+}
+
+
+
+
+.text {
+    padding: .5rem;
+}
+
+
+
+@media (min-width: 1200px) {
+    .text {
+        width: 60%;
+        align-self: flex-start;
+    }
+}
+
+
+
+
+
+/* Introduction box styles */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.intro-pc {
+    display: none;
+}
+
+
+
+
+/* ipad / desktop version */
+
+
+@media (min-width: 768px) {
+    .intro {
+        display: none;
+    }
+
+    .intro-pc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .left, .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 40%;
+    }
+
+    .right {
+        align-items: flex-end;
+    }
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .intro-pc {
+        width: 50%;
+    }
+
+    .left, .right {
+        width: 50%;
+    }
+}
+
+
+
+
+
+/* Gallery styles */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+}
+
+
+
+.shop-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.column {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+
+.item {
+    width: 100%;
+    height: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .gallery {
+        width: 90%;
+    }
+
+    .shop-items {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .item {
+        height: 40vh;
+        margin-top: 3vh;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .gallery {
+        width: 90%;
+    }
+}
+
+
+
+
+
+/* ==== 3. FOOTER STYLES ==== */
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6d3a24;
+    color: #ffffff; 
+    padding: .5rem;
+  }
+
+
+  .links {
+    text-align: center;
+  }
+
+
+
+
+/*--------------*\
+*
+*   TYPOGRAPHY
+*
+\*--------------*/
+
+/* ==== 1. Headlines ==== */
+
+h1 {
+    font-family: 'ParkLaneNf-pRdR', serif;
+    font-size: 8vh;
+    color: #d8665b;
+    margin-bottom: 1vh;
+}
+
+
+
+@media(min-width: 1200px) {
+    h1 {
+        font-size: 12vh;
+    }
+}
+
+
+
+
+h2 {
+    font-family: "FontleroyBrown", cursive;
+    font-size: 5vh;
+    letter-spacing: .1rem;
+    color: #2983a6;
+}
+
+
+
+
+@media(min-width: 1200px) {
+    h2 {
+        font-size: 9vh;
+    }
+}
+
+
+
+
+h3, h4 {
+    font-family: 'Limelight', cursive;
+    font-size: 3vh;
+    padding: .5rem;
+}
+
+
+
+
+.welcome {
+    display: none;
+}
+
+
+
+
+@media (min-width: 768px) {
+    main .welcome {
+        display: block;
+        font-size: 7vh;
+        text-align: center;
+        margin-top: 10vh;
+        margin-bottom: 6vh;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    main .welcome {
+        margin-top: 20vh;
+        margin-bottom: 10vh;
+    }
+}
+
+
+
+
+.gallery h3 {
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .gallery h3 {
+        font-size: 7vh;
+    }
+}
+
+
+
+
+h4 {
+    font-size: 2.5vh;
+}
+
+
+
+
+.intro h3 {
+    margin-bottom: 3vh;
+}
+
+
+
+
+
+.intro h4 {
+    font-family: "FontleroyBrown", cursive;
+    font-size: 5.5vh;
+    color: #2983a6;
+    letter-spacing: .15rem;
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .intro-pc h4 {
+        font-family: "FontleroyBrown", cursive;
+        color: #2983a6;
+        font-size: 6vh;
+        padding-left: 0;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .intro-pc h4 {
+        font-size: 8vh;
+    }
+}
+
+
+
+
+h5 {
+    position: absolute;
+    bottom: 1.5rem;
+    font-size: 3vh;;
+    color: #ffffff;
+    font-family: 'Limelight', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==== 2. Phrases ==== */
+
+.text p, .intro p, .intro-pc p {
+    margin-bottom: 3vh;
+    text-align: justify;
+    line-height: 1.1;
+    font-size: 3vh;
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .text p{
+        font-size: 3.5vh;
+    }
+}
+
+
+
+.text:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.intro p {
+    padding: 1rem;
+    padding-top: 0;
+}
+
+
+
+
+
+
+
+/* ==== 3. Navigation ==== */
+
+nav ul li ul li {
+    font-family: 'Josefin Sans', sans-serif;
+    color:#6d3a24;  
+    border-bottom: 1px solid #6d3a24;
+    padding: .5rem;
+}
+
+
+li ul li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+
+
+@media(min-width: 768px) {
+    nav {
+        font-size: 1.5vh;
+    }
+}
+
+
+@media(min-width: 1200px) {
+    nav {
+        font-size: 2.5vh;
+    }
+}
+
+
+
+
+/*==== 4. Footer text styles ====*/
+
+footer p {
+    margin: 0;
+    text-align: center;
+    padding: .5rem;
+    font-size: 2vh;
+  }
+  
+  
+  
+  footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2vh;
+  }
+  
+  
+  footer a:hover {
+    font-weight: 800;
+  }
+
+
+
+
+  /*==== 5. Cookie box text styles ====*/
+
+.cookie-container p {
+    font-size: 2vh;
+    color: #ffffff;
+    margin-top: 0;
+  }
+  
+  
+  
+  .cookie-container a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-position: below;
+    color: #ffffff;
+  }
+  
+
+
+
+
+/* ==== 6. Text decorations ==== */
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+nav ul li ul li a {
+    color: #6d3a24;
+    padding: 1rem;
+}
+
+
+
+nav ul li ul li:hover {
+    background-color: #6d3a24;
+    color: #d9cdbf;
+}
+
+
+
+nav ul li ul li a:hover {
+    color:#d9cdbf;
+}
+
+
+
+
+@media(max-width: 765px) {
+    nav ul li:hover {
+        text-decoration: underline;
+        text-decoration-color: #d9cdbf;
+    }
+
+    nav ul li ul li:hover {
+        text-decoration: none;
+    }
+
+}
+
+
+
+
+
+
+/*------------*\
+*
+*    IMAGES
+*
+\*------------*/
+
+/* ==== 1. HEADER ==== */
+
+.logo {
+    display: block;
+    width: 70%;
+    height: auto;
+    margin-top: 3vh;
+}
+
+
+
+@media(min-width: 540px) {
+    .logo {
+        width: 35%
+    }
+}
+
+
+
+@media(min-width: 768px) {
+    .logo {
+        width: 40%;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .logo {
+        width: 30%;
+        margin-top: 10vh;
+    }
+}
+
+
+
+
+/* ==== 2. BIRTHDAY BOX ==== */
+
+.bday-banner {
+    width: 50%;
+    height: auto;
+    display: block;
+    align-self: flex-start;
+    margin-bottom: 0;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .bday-banner {
+        width: 30%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .bday-banner {
+        width: 20%;
+    }
+}
+
+
+
+
+.surprise {
+    width: 90%;
+    height: auto;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .surprise {
+        width: 40%;
+    }
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .surprise {
+        width: 35%;
+        position: absolute;
+        top: 55%;
+        left: 70%;
+    }
+}
+
+
+
+
+
+/* ==== 3. INTRO BOX ==== */
+
+.dots, .dots-right {
+    display: none;
+}
+
+
+.robot, .retro {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 4vh
+}
+
+
+
+@media (min-width: 768px) {
+    .robot, .retro, .dots, .dots-right {
+        width: 70%;
+        align-self: center;
+        margin-bottom: 10vh;
+    }
+
+    .retro {
+        width: 100%;
+    }
+
+    .dots, .dots-right {
+        display: block;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .robot, .retro, .dots, .dots-right {
+        width: 50%;
+    }
+
+    .retro {
+        width: 70%;
+    }
+}
+
+
+
+
+/* ==== 4. GALLERY ==== */
+
+.category {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+
+
+.category:hover {
+    filter: brightness(100%);
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+
+
+/*-------------*\
+*
+*   COMPONENTS
+*
+\*-------------*/
+
+/* 1. Top navigation */
+
+nav {
+    width: 100%;
+    height: auto;
+    background-color: #6d3a24;
+}
+
+
+
+@media (min-width: 1200px) {
+    nav {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
+.menu {
+    color: #ffffff;
+    padding: 1rem;
+}
+
+
+nav ul {
+    display: none;
+    font-family: 'Limelight', cursive;
+    color: #ffffff;
+}
+
+
+
+
+@media (max-width: 765px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+
+
+
+nav ul li {
+    letter-spacing: .1rem;
+    line-height: 1.1;
+    position: relative;
+    padding: 1rem;
+}
+
+
+
+
+nav ul li ul li {
+    padding: 0;
+}
+
+
+
+@media (min-width: 768px) {
+    .bars {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
+
+
+/* dropdown menu */
+
+nav ul li ul {
+    width: auto;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -285%;
+    left: 100%;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+@media (min-width: 768px) {
+    nav ul li ul {
+        top: 100%;
+        left: 0;
+        right: -90%;
+    }
+}
+
+
+
+
+nav ul li:hover > ul, nav ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+
+
+/* underline effect for ipad, desktop */
+
+@media(min-width: 768px) {
+
+.with-hover {
+    position: relative;
+}
+
+
+
+.with-hover::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #EFEFBB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #d9cdbf);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #d9cdbf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: absolute;
+    bottom: .7rem;
+    left: 50%;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+
+
+.with-hover:hover::after {
+    left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+
+/*==== 2. Cookie consent box ====*/
+
+.cookie-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(216, 102, 91, .9);
+    padding: 1rem;
+    box-shadow: 0 -2px 16px #d8665b;
+  }
+  
+  
+  
+  
+  
+  
+  @media (min-width: 1200px) {
+    .cookie-container {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  
+  
+  
+  .cookie-btn {
+    border: 0;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #2983a6;
+    padding: .5rem .8rem;
+    font-size: 1.5vh;
+    font-weight: 700;
+    margin-top: .5rem;
+    cursor: pointer;
+  }
+  
+  
+  
+  .cookie-btn:hover {
+    background: #2983a6;
+    color: #ffffff;
+  }
+  
+  
+  @media (min-width: 1200px) {
+    .cookie-btn {
+      margin-top: 0;
+    }
+  }
+
+
+
+
+
+  /*==== 3. Scroll to TOP button ====*/
+
+.top-link {
+    visibility: hidden;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #2983a6;
+    opacity: .8;
+  }
+  
+  
+  
+  .top-link i {
+    font-size: 3vh;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 2vh;
+  }
+  
+  
+  
+  .top-link:hover {
+      background-color: #d8665b;
+    opacity: 1;
+  }
+  
+  
+  
+  /* Classes for JS */
+  
+  .show {
+    visibility: visible;
+    opacity: .8;
+  }
+  
+  .hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
