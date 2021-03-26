@@ -1,0 +1,42 @@
+/* ==== FOOTER STYLES ==== */
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6d3a24;
+    color: #ffffff; 
+    padding: .5rem;
+  }
+
+
+  .links {
+    text-align: center;
+  }
+
+
+
+  /*==== 4. Footer text styles ====*/
+
+footer p {
+    margin: 0;
+    text-align: center;
+    padding: .5rem;
+    font-size: 2vh;
+  }
+  
+  
+  
+  footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2vh;
+  }
+  
+  
+  footer a:hover {
+    font-weight: 800;
+  }

@@ -490,11 +490,18 @@ h4 {
 h5 {
     position: absolute;
     bottom: 1.5rem;
-    font-size: 3vh;;
+    font-size: 2vh;;
     color: #ffffff;
     font-family: 'Limelight', cursive;
 }
 
+
+
+@media (min-width: 1200px) {
+    h5 {
+        font-size: 3vh;
+    }
+}
 
 
 
@@ -547,7 +554,7 @@ nav ul li ul li {
     font-family: 'Josefin Sans', sans-serif;
     color:#6d3a24;  
     border-bottom: 1px solid #6d3a24;
-    padding: .5rem;
+    padding: 0;
 }
 
 
@@ -848,6 +855,7 @@ nav ul li ul li a:hover {
 /* 1. Top navigation */
 
 nav {
+  display: block;
     width: 100%;
     height: auto;
     background-color: #6d3a24;
@@ -917,11 +925,13 @@ nav ul li ul li {
     }
 
     nav ul li {
+        width: auto;
         margin-bottom: 0;
         padding-left: 0;
         padding-right: 0;
     }
 }
+
 
 
 
@@ -944,9 +954,16 @@ nav ul li ul {
 
 @media (min-width: 768px) {
     nav ul li ul {
+        display: block;
+        width: auto;
         top: 100%;
         left: 0;
         right: -90%;
+    }
+
+    nav ul li ul li {
+        width: 100%;
+        margin: 0;
     }
 }
 
@@ -1052,52 +1069,3 @@ nav ul li:hover > ul, nav ul li ul:hover {
     }
   }
 
-
-
-
-
-  /*==== 3. Scroll to TOP button ====*/
-
-.top-link {
-    visibility: hidden;
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    transition: all .5s ease-in-out;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 50%;
-    background-color: #2983a6;
-    opacity: .8;
-  }
-  
-  
-  
-  .top-link i {
-    font-size: 3vh;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 2vh;
-  }
-  
-  
-  
-  .top-link:hover {
-      background-color: #d8665b;
-    opacity: 1;
-  }
-  
-  
-  
-  /* Classes for JS */
-  
-  .show {
-    visibility: visible;
-    opacity: .8;
-  }
-  
-  .hide {
-    visibility: hidden;
-    opacity: 0;
-  }
-  

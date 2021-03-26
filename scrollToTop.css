@@ -1,0 +1,45 @@
+/*====  Scroll to TOP button ====*/
+
+.top-link {
+    visibility: hidden;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #2983a6;
+    opacity: .8;
+  }
+  
+  
+  
+  .top-link i {
+    font-size: 3vh;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 2vh;
+  }
+  
+  
+  
+  .top-link:hover {
+      background-color: #d8665b;
+    opacity: 1;
+  }
+  
+  
+  
+  /* Classes for JS */
+  
+  .show {
+    visibility: visible;
+    opacity: .8;
+  }
+  
+  .hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+  

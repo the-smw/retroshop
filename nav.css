@@ -1,0 +1,418 @@
+/* ----------------- *\
+*
+*    TOP NAVIGATION
+*         FOR
+*       SUBPAGES
+*
+\* -----------------*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.bars {
+    width: 100%;
+    height: auto;
+    background-color: #6d3a24;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (min-width: 768px) {
+    .bars {
+        width: 80%;
+    }
+}
+
+
+
+
+
+/* 1. Top navigation layout */
+
+
+.nav-head {
+    display: none;
+}
+
+
+
+@media (min-width: 768px) {
+    .nav-head {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: .5rem;
+        background: url('assets/back.png') no-repeat center center;
+        background-size: cover;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .nav-head {
+        justify-content: space-between;
+    }
+}
+
+
+
+
+nav {
+    width: 100%;
+    height: auto;
+    background-color: #6d3a24;
+}
+
+
+
+@media (min-width: 1200px) {
+    nav, .nav-head {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
+.menu {
+    color: #ffffff;
+    padding: 1rem;
+}
+
+
+nav ul {
+    display: none;
+    font-family: 'Limelight', cursive;
+    color: #ffffff;
+}
+
+
+
+
+@media (max-width: 765px) {
+    nav ul {
+        width: 50%;
+    }
+
+    nav ul:last-child {
+        padding-bottom: 7vh;
+    }
+
+    nav ul li ul:last-child {
+        padding-bottom: 0;
+    }
+
+    nav ul li ul {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+}
+
+
+
+
+nav ul li {
+    letter-spacing: .1rem;
+    line-height: 1.1;
+    position: relative;
+    padding: 1rem;
+}
+
+
+
+
+nav ul li ul li {
+    padding: 0;
+}
+
+
+
+@media (min-width: 768px) {
+    .bars {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* dropdown menu */
+
+nav ul li ul {
+    width: auto;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -560%;
+    left: 100%;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+@media (min-width: 768px) {
+    nav ul li ul {
+        display: block;
+        width: auto;
+        top: 100%;
+        left: 0;
+        right: -90%;
+    }
+
+    nav ul li ul li {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+
+
+nav ul li:hover > ul, nav ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+
+
+/* underline effect for ipad, desktop */
+
+@media(min-width: 768px) {
+
+.with-hover {
+    position: relative;
+}
+
+
+
+.with-hover::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #EFEFBB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #d9cdbf);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #d9cdbf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: absolute;
+    bottom: .7rem;
+    left: 50%;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+
+
+.with-hover:hover::after {
+    left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* 2. Top navigation typography */
+
+h2 {
+    font-family: 'ParkLaneNf-pRdR', serif;
+    font-size: 5vh; 
+    letter-spacing: .15rem;
+    color: #d8665b;
+}
+
+
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 8vh;
+    }
+}
+
+
+
+
+.nav-head a {
+    display: inline-block;
+    color: #2983a6;
+    font-size: 3.5vh;
+    margin-top: .5rem;
+    padding: .2rem;
+}
+
+
+.nav-head a:hover {
+    transform: scale(1.2);
+}
+
+
+.bars i {
+    font-size: 5vh;
+}
+
+
+
+span {
+    font-family: 'ParkLaneNf-pRdR', serif;
+    font-size: 5vh;;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+nav ul li ul li {
+    height: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#6d3a24;  
+    border-bottom: 1px solid #6d3a24;
+    padding: 0;
+}
+
+
+li ul li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+
+
+@media(min-width: 768px) {
+    nav {
+        font-size: 1.8vh;
+    }
+}
+
+
+@media(min-width: 1200px) {
+    nav {
+        font-size: 3vh;
+    }
+}
+
+
+
+
+
+/* ==== Text decorations ==== */
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+nav ul li ul li a {
+    color: #6d3a24;
+    padding: 1rem;
+}
+
+
+
+nav ul li ul li:hover {
+    background-color: #6d3a24;
+    color: #d9cdbf;
+}
+
+
+
+nav ul li ul li a:hover {
+    color:#d9cdbf;
+}
+
+
+
+
+@media(max-width: 765px) {
+    nav ul li:hover {
+        text-decoration: underline;
+        text-decoration-color: #d9cdbf;
+    }
+
+    nav ul li ul li:hover {
+        text-decoration: none;
+    }
+
+}
+
+
+
+/* ==== 3. Top navigation images ==== */
+
+.nav-head-logo {
+    width: 20%;
+    height: auto;
+    margin: 0;
+}
+
+
+
+@media (min-width: 768px) {
+    .banner {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .nav-head-logo {
+        width: 10%;
+    }
+
+    .banner {
+        display: block;
+        width: 15%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+
+
+
+.nav-logo {
+    width: 20vh;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+@media (min-width: 768px) {
+    .pic {
+        display: none;
+    }
+}

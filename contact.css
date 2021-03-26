@@ -1,0 +1,292 @@
+/*-------------*\
+*
+*  BASE STYLES
+*
+\*-------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'ParkLaneNf-pRdR';
+    src: url("assets/ParkLaneNf-pRdR.ttf");
+}
+
+
+
+@font-face {
+    font-family: 'FontleroyBrown';
+    src: url("assets/FontleroyBrown.ttf");
+}
+
+
+
+body {
+    width: 100vw;
+    height: auto;
+    background-color: #d9cdbf;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5vh;
+    color: #6d3a24;
+}
+
+
+
+/* Single direction margin declaration */
+
+nav, header,
+.actual, .headline,
+img {
+    margin-bottom: 3vh;
+}
+
+
+
+
+
+/*-------------*\
+*
+*    LAYOUT
+*
+\*-------------*/
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+main, .contact-options, .phone, .mail, .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (min-width: 1200px) {
+    main {
+        width: 80%;
+        margin-top: 10vh;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left, .right {
+        width: 45%;
+    }
+}
+
+
+
+.contact-options {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .contact-options {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
+
+
+
+
+/* ==== CONTACT FORM ==== */
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+input, textarea {
+    padding: 10px;
+    margin: 1rem 0;
+    border: 0;
+    border-bottom: 5px solid #6d3a24;
+    background: transparent;
+    outline: none;
+}
+
+
+textarea {
+    height: 25vh;
+    resize: none;
+}
+
+
+
+@media (min-width: 768px) {
+    input, textarea {
+        width: 100%;
+        margin-top: 3vh;
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+/*------------*\
+*
+*  TYPOGRAPHY
+*
+\*------------*/
+
+h1 {
+    font-family: 'Limelight', cursive;
+    font-size: 5vh;
+    line-height: 1.1;
+    margin-bottom: 5vh;
+}
+
+
+
+p {
+    font-size: 3.5vh;
+    line-height: 1.1;
+    margin-bottom: 3vh; 
+}
+
+
+
+.contact-options i {
+    font-size: 10vh;
+    margin-bottom: 1.5vh;
+}
+
+
+
+@media (min-width: 768px) {
+    .contact-options i {
+        font-size: 7vh;
+    }
+
+    .contact-options p {
+        font-size: 2vh;
+    }
+}
+
+
+
+
+.contact-options p {
+    font-size: 3vh;
+    text-align: center;
+}
+
+
+
+::-webkit-input-placeholder {
+    color: #6d3a24;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5vh;
+}
+
+
+::-moz-input-placeholder {
+    color: #6d3a24;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5vh;
+}
+
+
+
+::-ms-input-placeholder {
+    color: #6d3a24;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5vh;
+}
+
+
+
+
+/*------------*\
+*
+*    IMAGES
+*
+\*-------------*/
+
+.owl {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+@media (min-width: 1200px) {
+    .owl {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+
+
+
+/*------------*\
+*
+*  COMPONENTS
+*
+\*------------*/
+
+button {
+    display: inline-block;
+    font-family: 'Limelight', cursive;
+    font-size: 2.5vh;
+    color: #ffffff;
+    background-color: #d8665b;
+    padding: .5rem 2rem;
+    border: none;
+    text-align: center;
+}
+
+
+
+button:hover {
+    background-color: #2983a6;
+    transition: .5s ease-in-out;
+}
+
+
+
+@media (min-width: 1200px) {
+    button{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
