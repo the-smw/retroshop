@@ -1,0 +1,330 @@
+/*-------------*\
+*
+*  BASE STYLES
+*
+\*-------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'ParkLaneNf-pRdR';
+    src: url("assets/ParkLaneNf-pRdR.ttf");
+}
+
+
+
+@font-face {
+    font-family: 'FontleroyBrown';
+    src: url("assets/FontleroyBrown.ttf");
+}
+
+
+
+body {
+    width: 100vw;
+    height: auto;
+    background-color: #d9cdbf;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5vh;
+    color: #6d3a24;
+}
+
+
+
+
+
+/*-----------*\
+*
+*   LAYOUT
+*
+\*-----------*/
+
+main {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    main {
+        width: 100%;
+    }
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/* ==== 1. SIDE NAVIGATION ==== */
+
+.side-navigation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    opacity: .9;
+}
+
+
+
+
+.side-icon {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #6d3a24;
+    color:#d9cdbf;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 200px) {
+    .side-navigation {
+        width: 60%;
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .side-navigation {
+        width: 15%;
+    }
+}
+
+
+
+
+.sidebar {
+    width: auto;
+}
+
+
+
+
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    background-color: #2983a6;
+}
+
+
+.sidebar ul li {
+    padding: 1rem;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+
+
+
+@media (min-width: 1024px) {
+    .side-navigation {
+        display: none;
+    }
+}
+
+
+
+
+
+
+/* ==== 2. PRODUCT GALLERY ==== */
+
+.product-gallery {
+    width: 90%;
+    height: auto;
+    margin-bottom: 10vh;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .product-gallery {
+        width: 100%;
+    }
+}
+
+
+.card {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 3vh;
+    background-color:rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 10px rgba(109, 58, 36, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.pictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .pictures {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+
+.column {
+    width: 30%;
+    padding: 0 4px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/*-----------*\
+*
+*   IMAGES
+*
+\*-----------*/
+
+.card img {
+  margin-top: .5rem;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+
+
+
+
+/*-----------*\
+*
+*  TYPOGRAPHY
+*
+\*-----------*/
+
+h1 {
+    text-align: center;
+    font-family: 'Limelight', cursive;
+    font-size: 5vh;
+    margin-bottom: 10vh;
+}
+
+
+h3 {
+    font-family: "FontleroyBrown", cursive;
+    font-size: 10vh;
+    letter-spacing: .1rem;
+    color: #2983a6;
+}
+
+
+
+.sidebar ul li {
+    font-size: 3.5vh;
+}
+
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.sidebar ul li:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted ;
+}
+
+
+
+
+.side-icon p {
+    font-family: 'Limelight', cursive;
+    font-size: 3vh;
+}
+
+
+
+main i {
+    font-size: 3vh;
+}
+
+
+
+@media (max-width: 1024px) {
+    main i {
+        font-size: 5vh;
+    }
+}

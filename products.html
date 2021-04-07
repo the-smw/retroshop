@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <title>RetroShop - Termékek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" type="text/css" href="products.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="scrollToTop.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Limelight&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d47a07c59.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts.js" defer></script>
+    <script src="side-nav.js" defer></script>
+    <script src="category-button.js" defer></script>
+</head>
+<body>
+    <div class="nav-head">
+        <img class="banner" src="assets/banner left.png" alt="banner">
+        <img class="nav-head-logo" src="assets/retroshop-logo.png" alt="head-logo">
+        <div class="links">
+            <h2>Retroshop</h2>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest-square"></i></a>
+        </div>
+        <img class="banner" src="assets/banner right.png" alt="banner">
+    </div>
+    <div class="bars">
+        <i class="menu fas fa-bars"></i>
+        <span>Retroshop</span>
+    </div>
+    <nav>
+        <ul class="navbar">
+            <li class="pic"><a href="assets/index.html"><img class="nav-logo" src="assets/retroshop-logo-white-circle.png" alt="logo"></a></li>
+            <li class="with-hover"><a href="index.html">Főoldal</a></li>
+            <li class="with-hover"><a href="#">Rólunk</a></li>
+            <li class="products with-hover"><a href="#">Termékek</a>
+                <ul class="product-list">
+                    <li><a href="#decor">Dekoráció</a></li>
+                    <li><a href="#poster">Poszterek</a></li>
+                    <li><a href="#gadget">Kütyük</a></li>
+                    <li><a href="#game">Játékok</a></li>
+                    <li><a href="#clothing">Ruházat</a></li>
+                    <li><a href="#acc">Kiegészítők</a></li>
+                    <li><a href="#home">Lakberendezés</a></li>
+                    <li><a href="#diy">Kellékek</a></li>
+                    <li><a href="#gastro">Gasztro</a></li>
+                </ul>
+            </li>
+            <li class="inspiration with-hover"><a href="#">Inspiráció</a>
+                <ul class="insp-list">
+                    <li><a href="#">Lakberendezés</a></li>
+                    <li><a href="#">Dekoráció</a></li>
+                    <li><a href="#">D.I.Y.</a></li>
+                </ul>
+            </li>
+            <li class="with-hover"><a href="#">Kapcsolat</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Lesd meg mi mindent találhatsz nálunk!</h1>
+        <div class="container">
+            <div id="side-navigation" class="side-navigation">
+                <div id="cat-button" class="side-icon">
+                    <i class="side fas fa-chevron-circle-right"></i>
+                    <p>Kategóriák</p>
+                </div>
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#decor">Dekoráció</a></li>
+                        <li><a href="#poster">Poszterek</a></li>
+                        <li><a href="#gadget">Kütyük</a></li>
+                        <li><a href="#game">Játékok</a></li>
+                        <li><a href="#clothing">Ruházat</a></li>
+                        <li><a href="#acc">Kiegészítők</a></li>
+                        <li><a href="#home">Lakberendezés</a></li>
+                        <li><a href="#diy">Kellékek</a></li>
+                        <li><a href="#gastro">Gasztro</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-gallery">
+                <div class="card" id="decor">
+                    <h3>Dekoráció</h3>
+                    <div class="pictures">
+                        <div class="column">
+                            <img src="assets/decor1.jpg" alt='1'>
+                            <img src="assets/decor2.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/decor4.jpg" alt='1'>
+                            <img src="assets/decor3.jpg" alt='1'>
+                            <img src="assets/decor5.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/decor7.jpg" alt='1'>
+                            <img src="assets/decor6.jpg" alt='1'>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="poster">
+                    <h3>Poszterek</h3>
+                    <div class="pictures">
+                        <div class="column">
+                            <img src="assets/poster2.jpg" alt='1'>
+                            <img src="assets/poster5.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/poster1.jpg" alt='1'>
+                            <img src="assets/poster4.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/poster3.jpg" alt='1'>
+                            <img src="assets/poster7.jpg" alt='1'>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="gadget">
+                    <h3>Kütyük</h3>
+                    <div class="pictures">
+                        <div class="column">
+                            <img src="assets/gadget1.jpg" alt='1'>
+                            <img src="assets/gadget4.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/gadget2.jpg" alt='1'>
+                            <img src="assets/gadget6.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/gadget3.jpg" alt='1'>
+                            <img src="assets/gadget5.jpg" alt='1'>
+                            <img src="assets/gadget7.jpg" alt='1'>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="game">
+                    <h3>Játékok</h3>
+                    <div class="pictures">
+                        <div class="column">
+                            <img src="assets/game3.jpg" alt='1'>
+                            <img src="assets/game4.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/game2.jpg" alt='1'>
+                            <img src="assets/game6.jpg" alt='1'>
+                            <img src="assets/game5.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/game1.jpg" alt='1'>
+                            <img src="assets/game7.jpg" alt='1'>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="clothing">
+                    <h3>Ruházat</h3>
+                    <div class="pictures">
+                        <div class="column">
+                            <img src="assets/cloth1.jpg" alt='1'>
+                            <img src="assets/cloth4.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/cloth3.jpg" alt='1'>
+                            <img src="assets/cloth2.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/cloth7.jpg" alt='1'>
+                            <img src="assets/cloth6.jpg" alt='1'>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="acc">
+                    <h3>Kiegészítok</h3>
+                    <div class="pictures">
+                        <div class="column">
+                            <img src="assets/acc1.jpg" alt='1'>
+                            <img src="assets/acc5.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/acc6.jpg" alt='1'>
+                            <img src="assets/acc2.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/acc4.jpg" alt='1'>
+                            <img src="assets/acc3.jpg" alt='1'>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="home">
+                    <h3>Lakberendezés</h3>
+                    <div class="pictures">
+                        <div class="column">
+                            <img src="assets/home1.jpg" alt='1'>
+                            <img src="assets/home4.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/home6.jpg" alt='1'>
+                            <img src="assets/home2.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/home3.jpg" alt='1'>
+                            <img src="assets/home4.jpg" alt='1'>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="diy">
+                    <h3>Kellékek</h3>
+                    <div class="pictures">
+                        <div class="column">
+                            <img src="assets/diy1.jpg" alt='1'>
+                            <img src="assets/diy4.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/diy5.jpg" alt='1'>
+                            <img src="assets/diy6.jpg" alt='1'>
+                            <img src="assets/diy7.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/diy3.jpg" alt='1'>
+                            <img src="assets/diy2.jpg" alt='1'>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="gastro">
+                    <h3>Gasztro</h3>
+                    <div class="pictures">
+                        <div class="column">
+                            <img src="assets/gastro2.jpg" alt='1'>
+                            <img src="assets/gastro6.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/gastro5.jpg" alt='1'>
+                            <img src="assets/gastro1.jpg" alt='1'>
+                        </div>
+                        <div class="column">
+                            <img src="assets/gastro3.jpg" alt='1'>
+                            <img src="assets/gastro4.jpg" alt='1'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>És még rengeteg különlegességgel várunk üzletünkben!</h1>
+        <a class="top-link" id="js-top" href="#top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+    </main>
+    <footer>
+        <p><small>Retroshop Budapest © 2021 Minden jog fenntartva</small></p>
+        <div class="links">
+          <a href="#">Impresszum |</a>
+          <a href="#">Adatkezelési tájékoztató |</a>
+          <a href="#">Cookie szabályzat</a>
+        </div>
+    </footer>
+</body>
+</html>

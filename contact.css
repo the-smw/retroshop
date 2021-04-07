@@ -36,9 +36,7 @@ body {
 
 /* Single direction margin declaration */
 
-nav, header,
-.actual, .headline,
-img {
+nav, header {
     margin-bottom: 3vh;
 }
 
