@@ -1,0 +1,347 @@
+/*-------------*\
+*
+*  BASE STYLES
+*
+\*-------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'ParkLaneNf-pRdR';
+    src: url("assets/ParkLaneNf-pRdR.ttf");
+}
+
+
+
+@font-face {
+    font-family: 'FontleroyBrown';
+    src: url("assets/FontleroyBrown.ttf");
+}
+
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: #d9cdbf;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5vh;
+    color: #6d3a24;
+}
+
+
+
+/* Single direction margin declaration */
+
+nav, header {
+    margin-bottom: 3vh;
+}
+
+
+
+
+
+/*-------------*\
+*
+*    LAYOUT
+*
+\*-------------*/
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+}
+
+
+
+@media(min-width: 1200px) {
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+/* ==== 1. ARTICLE STYLES ==== */
+
+article {
+    width: 100%;
+    margin:  auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
+
+
+
+
+@media (min-width: 1200px) {
+    article {
+        width: 80%;
+        margin-left: 0;
+    }
+}
+
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    border-bottom: 1px solid #6d3a24;
+}
+
+
+
+.media-object {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .media-object {
+        flex-direction: row;
+    }
+}
+
+
+.media-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: .5rem;
+}
+
+
+
+
+
+/* ==== 2. LINK BOX STYLES ==== */
+
+.plus {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin-bottom: 5vh;
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .plus {
+        width: 90%;
+    }
+}
+
+.plus a {
+    align-self: flex-start;
+}
+
+
+
+
+/* ==== 3. BLOG STYLES ==== */
+
+
+@media (min-width: 1200px) {
+    .blog {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0;
+    }
+}
+
+
+
+
+
+/*-------------*\
+*
+*   TYPOGRAPHY
+*
+\*-------------*/
+
+h1 {
+    font-family: 'Limelight', cursive;
+    font-size: 4vh;
+    margin-bottom: 3vh;
+    padding: .5rem;
+}
+
+
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 6vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+}
+
+
+
+h3 {
+    font-family: 'Limelight', cursive;
+    font-size: 3.5vh; 
+    margin-bottom: 2vh;
+}
+
+
+.plus h3 {
+    color: #d9cdbf;
+    background-color: #6d3a24;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+.head p {
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+
+.media-text p {
+    font-size: 3vh;
+}
+
+
+
+.plus a {
+    font-size: 3vh;
+    padding: .5rem;
+    
+}
+
+
+
+
+
+/* ==== Text decoration ==== */
+
+.plus h3 {
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+
+.plus a {
+    text-decoration: none;
+    color: #6d3a24;
+}
+
+
+.plus a:hover {
+    color: #2983a6;
+    font-weight: 600;
+}
+
+
+
+
+
+/*-------------*\
+*
+*    IMAGES
+*
+\*-------------*/
+
+.blog-img {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    padding: .5rem;
+}
+
+
+
+
+
+
+
+
+
+/*--------------*\
+*
+*   COMPONENTS
+*
+\*--------------*/
+
+/* ==== 1. FORWARD BUTTON ==== */
+
+.right {
+    display: flex;
+    margin-left: auto;
+    padding: 1rem;
+}
+
+
+article a, .back {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+    font-size: 3vh;
+    font-weight: 600;
+    font-variant: small-caps;
+    letter-spacing: .2rem;
+    color: #d9cdbf;
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: .5rem 1rem;
+    background-color: #d8665b;
+}
+
+
+
+.back {
+    margin-left: 0;
+    margin-bottom: 5vh;
+}
+
+
+
+article a:hover, .back:hover {
+    background-color: #2983a6;
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}

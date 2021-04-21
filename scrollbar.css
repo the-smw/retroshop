@@ -1,0 +1,19 @@
+/*==== 5. Feedback scrollbar ====*/
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #d9cdbf;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #6d3a24; 
+    border-radius: 10px;
+  }
+  
+  
+  
