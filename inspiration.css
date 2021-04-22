@@ -21,7 +21,9 @@
     src: url("assets/FontleroyBrown.ttf");
 }
 
-
+html, body {
+    overflow-x: hidden;
+}
 
 body {
     width: 100%;
@@ -59,7 +61,7 @@ main {
     display: inline-block;
     width: 90%;
     height: 50vh;
-    margin-top: 5vh;
+    margin-top: 0;
 }
 
 
@@ -93,6 +95,11 @@ main {
     .box:hover {
         transform: scale(1.1);
         transition: .5s ease-out;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
     }
 }
 

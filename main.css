@@ -617,11 +617,11 @@ footer p {
   
   
   .cookie-container a {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-underline-position: below;
+    text-decoration: none;
+    font-weight: 700;
     color: #ffffff;
   }
+
   
 
 

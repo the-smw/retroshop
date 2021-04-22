@@ -86,7 +86,7 @@ main {
     .about {
         flex-direction: row;
         width: 100%;
-        height: 100vh;
+        height: 130vh;
         margin-bottom: 10vh;
     }
 
@@ -101,7 +101,6 @@ main {
     .right {
         justify-content: center;
         align-items: center;
-        width: 40%;
     }
 }
 
@@ -203,7 +202,8 @@ h3 {
 
 @media (min-width: 1200px) {
     h1 {
-        font-size: 15vh;
+        font-size: 15vh;   
+        z-index: -1;
     }
 
     h3 {
