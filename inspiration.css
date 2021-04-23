@@ -58,6 +58,7 @@ main {
     width: 90%;
     height: 50vh;
     margin-top: 5vh;
+    z-index: -1;
 }
 
 
