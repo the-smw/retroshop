@@ -10,4 +10,14 @@ $(document).ready(function () {
 
 
 
+  $(document).ready(function () {
+    $(".sidebar ul li").click(function() {
+        $(".sidebar").fadeOut(1000);
+    });
+  });
+
+
+
+
+
   
