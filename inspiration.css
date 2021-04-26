@@ -21,6 +21,15 @@ html, body {
     overflow-x: hidden;
 }
 
+
+
+@media (min-width: 1200px) {
+    html, body {
+        overflow-y: hidden;
+    }
+}
+
+
 body {
     width: 100%;
     height: auto;
@@ -64,6 +73,10 @@ main {
 
 
 
+
+
+
+
 @media (min-width: 1200px) {
     .container {
         display: grid;
@@ -83,11 +96,13 @@ main {
     main {
         flex-direction: row;
         grid-area: main;
+        margin: 0;
+        height: auto;
     }
 
     .box {
         width: 30%;
-        margin-top: 0;
+        margin: 0;
     }
 
     .box:hover {
@@ -95,10 +110,9 @@ main {
         transition: .5s ease-out;
     }
 
-    footer {
-        position: fixed;
-        bottom: 0;
-    }
+    
+
+    
 }
 
 
